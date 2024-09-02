@@ -1,0 +1,9 @@
+apiVersion: example.com.my.domain/v1
+kind: PdfDocument
+metadata: 
+  name: my-document-1
+spec: 
+  documentName: my-text
+  text: | 
+    # Hey iam kubernetes developer 
+  

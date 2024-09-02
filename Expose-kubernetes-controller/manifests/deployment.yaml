@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: expose-deployment
+  labels:
+    app: expose-deployment
+  namespace: controller
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: expose-deployment
+  template:
+    metadata:
+      labels:
+        app: expose-deployment
+    spec:
+      serviceAccountName: expose-sa
+      containers:
+      - name: expose-container
+        image: anish60/anishbista60-385d1f8d19df4a2168de303f0d219518@sha256:3c4675a1ddcbd2f93f4b606e01d618ba9e0881b6f6778f9637fa5b08e4a7cd35

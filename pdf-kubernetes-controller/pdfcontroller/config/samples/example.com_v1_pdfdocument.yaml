@@ -1,0 +1,9 @@
+apiVersion: example.com.my.domain/v1
+kind: PdfDocument
+metadata:
+  labels:
+    app.kubernetes.io/name: pdfcontroller
+    app.kubernetes.io/managed-by: kustomize
+  name: pdfdocument-sample
+spec:
+  # TODO(user): Add fields here
